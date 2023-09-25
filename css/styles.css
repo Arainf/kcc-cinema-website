@@ -1,0 +1,536 @@
+
+@font-face {
+  font-family: "myfont";
+  src: url(../fonts/Inter-Bold.otf)
+}
+
+@font-face {
+  font-family: "myfont2";
+  src: url(../fonts/Inter-Light.otf);
+}
+
+@font-face {
+  font-family: "myfont3";
+  src: url(../fonts/Inter-Black.otf);
+}
+
+@font-face {
+  font-family: "myfont4";
+  src: url(../fonts/Inter-Medium.otf);
+}
+
+@font-face {
+  font-family: "supreme-light";
+  src: url(../fonts/Supreme-Light.otf);
+}
+
+@font-face {
+  font-family: "tanker";
+  src: url(../fonts/Tanker-Regular.otf);
+}
+
+
+body {
+  height: 1500px;
+  overflow-x: hidden;
+  font-family: "myfont";
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+/*----------------------------------------GRAYBOX-------------------------------------------------*/
+
+#graybox {
+  z-index: 5;
+  margin: 0;
+  position: absolute;
+  padding: 0px;
+  width: 100%;
+  height: 85vh;
+  background-color: #12121260;
+}
+
+/*----------------------------------------GRAYBOX-------------------------------------------------*/
+
+/*----------------------------------------NAVIGATION-------------------------------------------------*/
+.navigation {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s ease-out;
+  backdrop-filter: blur(8px) brightness(1.2);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  -webkit-mask-image: linear-gradient(black 70%, transparent);
+}
+
+.navigation-logo {
+  padding: 0px;
+  margin: 0px;
+  flex: 2.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#KCC {
+  font-size: 20px;
+  font-family: "myfont3";
+}
+
+#CINEMA {
+  font-size: 20px;
+  font-family: "myfont2";
+}
+
+.navigation-text {
+  flex: 5.5;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#kcc-logo {
+  width: 60px;
+  height: 30px;
+  flex-shrink: 0;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+
+.navigation-text > ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.navigation-text > ul > li{
+  list-style: none;
+}
+
+.navigation-text > ul > li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 15px;
+  transition: 0.3s;
+  margin: 0px 0px;
+  font-family: "myfont";
+  letter-spacing: 1.6px;
+  position: relative;
+}
+
+.navigation-text > ul > li > a:before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.navigation-text > ul > li > a:hover {
+  color: skyblue;
+  background-color: #000000cc;
+  font-size: 18px;
+}
+
+
+
+
+.navigation-signup {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-button {
+  color: #fff;
+  font-family: "myfont";
+  font-size: 12px;
+  width: 61px;
+  height: 24px;
+  padding: 0 5px;
+  line-height: 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  background: linear-gradient(
+    98deg,
+    rgba(255, 255, 255, 0.45) 3.68%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+}
+
+#signup {
+  margin: 0 5px;
+}
+
+#globe {
+  padding: 0 5px;
+  margin: 0;
+}
+
+#word {
+  font-size: 12px;
+  padding: 0 5px;
+  margin: 0;
+}
+/*----------------------------------------NAVIGATION-------------------------------------------------*/
+
+
+/*----------------------------------------SLIDESHOW-------------------------------------------------*/
+
+.slider-frame {
+  display: flex;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-top: -50px;
+  width: 1910px;
+  height: 85vh;
+}
+
+.slide-images{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 85vh;
+  margin: 0 0 0 0;
+  position: relative;
+  animation-name: slide_animation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+}
+
+@keyframes slide_animation {
+  0% {left:0px;}
+  20% {left:-1900px;}
+  40% {left: -3800px;}
+  60% {left: -5700px;}
+  80% {left: -3800px;}
+  100% {left: -1900px;}
+  110% {left: 0px;}
+}
+
+
+.img-container > img {
+  height: 85vh;
+  width: 1900px;
+}
+
+/*----------------------------------------SLIDESHOW-------------------------------------------------*/
+
+
+/*----------------------------------------SHOWCASE-------------------------------------------------*/
+
+
+.box:focus { 
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+#Aboutus {
+  display: flex;
+  width: 350px;
+  height: 40px;
+  padding: 20px;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #ff0000;
+  background: #ff0000;
+  box-shadow: 0px 4px 12px 0px rgba(0, 64, 128, 0.2);
+  color: #ffebeb;
+  font-family: "myfont4";
+  font-size: 18px;
+  font-style: normal;
+  justify-content: center;
+  letter-spacing: 4.5px;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box-text{
+  z-index: 9;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: auto 50px;
+  top: 50%;
+  left: auto;
+}
+
+.box-text > p {
+  display: flex;
+  font-size: 16px;
+  font-family: "supreme-light";
+  text-align: left;
+  width: 60%;
+  height: 120px;
+  padding: 10px 0px 0px 0px;
+  margin: 0;
+  color:  #ffffffe2;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 17px;
+}
+
+.box-text > h1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "tanker";
+  text-align: left;
+  width: 573px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+/*----------------------------------------SHOWCASE-------------------------------------------------*/
+
+/* TRENDING */
+
+.box2 {
+  position: absolute  ;
+  width: 100%;
+  height: 200vh;
+  background-color:hsla(350,12%,8%,1);
+  background-image:
+  radial-gradient(at 40% 66%, hsla(22,36%,58%,1) 0px, transparent 50%),
+  radial-gradient(at 42% 86%, hsla(220,32%,30%,1) 0px, transparent 50%),
+  radial-gradient(at 52% 71%, hsla(6,8%,78%,1) 0px, transparent 50%),
+  radial-gradient(at 59% 43%, hsla(9,48%,30%,1) 0px, transparent 50%),
+  radial-gradient(at 9% 35%, hsla(252,98%,68%,1) 0px, transparent 50%);
+}
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 10px 50px;
+}
+
+.card > div > h1 {
+  font-size: 16px;
+}
+
+.card > div > p {
+  font-size: 12px;
+}
+
+.card > div {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0 10px;
+}
+
+.card > div > img {
+  flex-wrap: wrap;
+  width: auto;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 5px;
+}
+
+.stars2 {
+  color: yellow;
+}
+
+.trending-movies {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+}
+
+.trending-movies > div > h1 {
+  font-family: "tanker";
+  padding: 0 0 0 50px;
+  margin: 0;
+  letter-spacing: 10px;
+  color: black;
+}
+
+/* INNER BOX */
+
+.innerbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.innerbox-text{
+  flex:1;
+}
+
+.innerbox-text > h1 {
+  color: #2A52BE;
+  font-family: "tanker";
+  letter-spacing: 14px;
+}
+
+.innerbox-text > p {
+  font-family: "supreme-light";
+  color: #d3d3d3;
+  word-spacing: 3px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-align: left;
+}
+
+#ticket {
+  display: flex;
+  width: 130px;
+  height: 40px;
+  padding: 15px;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  background: #ff0000;
+  box-shadow: 0px 4px 12px 0px rgba(0, 64, 128, 0.2);
+  color: #ffebeb;
+  font-family: "myfont";
+  font-size: 12px;
+  font-style: normal;
+  justify-content: space-between;
+  letter-spacing: 1.4px;
+}
+
+video {
+  display: flex;
+  flex: 3;
+  margin: 0;
+  padding: 20px;
+  width: 800px;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 1280px){
+
+  .box-text > p {
+    display: none;
+  }
+
+  .box-text > h1 {
+    font-size: 45px;
+  }
+
+  li {
+    font-size: 12px;
+    padding: 0px 30px;
+  }
+
+/* Slideshow container */
+.slider-frame {
+  display: flex;
+  overflow: hidden;
+  margin-left: 0px;
+  margin-top: -50px;
+  width: 1900px;
+  height: 85vh;
+}
+
+.slide-images{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 100%;
+  height: 85vh;
+  margin: 0 0 0 0;
+  position: relative;
+  animation-name: slide_animation;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes slide_animation {
+  0% {left:0px;}
+  20% {left: -1280px;}
+  40% {left: -2560px;}
+  50% {left: -3840px;}
+  60% {left: -2560px;}
+  70% {left: -1280px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left:0px;}
+}
+
+.img-container {
+  height: 85vh;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+.img-container > img {
+  height: 85vh;
+  width: 1279px;
+}
+}
+
+@media only screen and (min-width: 1300px){
+ 
+ 
+  #KCC {
+    font-size: 24px;
+  }
+  
+  #CINEMA {
+    font-size: 24px;
+  }
+  
+  #kcc-logo {
+    width: 65px;
+    height: 35px;
+  }
+  
+  li {
+    font-size: 16px;
+    padding: 0 40px;
+  }
+  
+  .glass-button {
+    font-size: 16px;
+    width: 80px;
+    height: 30px;
+  }
+  
+  #signup {
+    margin: 0 10px;
+  }
+  
+  #word {
+    font-size: 16px;
+  }
+}
