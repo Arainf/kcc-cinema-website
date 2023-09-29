@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/2a956e9c05.js"
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://kit.fontawesome.com/2a956e9c05.js"
       crossorigin="anonymous"></script>
+
     <title>KCC CINEMA</title>
   </head>
 
   <body>
     <!--NAVIGATION-->
-    <div id="graybox"></div>
     <nav class="navigation">
       <div class="navigation-logo">
-        <h1 id="KCC">KCC</h1><h2 id="CINEMA">CINEMA</h2>
+        <h1 id="KCC">KCC</h1>
+        <h2 id="CINEMA">CINEMA</h2>
         <img src="img/kcc-logo.png" alt="kcc-logo" id="kcc-logo" />
       </div>
       <div class="navigation-text">
@@ -31,127 +33,66 @@
         <i class="fa fa-globe" aria-hidden="true" id="globe"></i>
         <h3 id="word">EN</h3>
       </div>
-      </nav>
+    </nav>
     <!--SLIDE SHOW-->
-    <div class="slider-frame">
-      <div class="slide-images">
-        <div class="img-container">
-          <img src="img/grandtourismo.jpg">
-        </div>
-        <div class="img-container">
-          <img src="img/barbie.jpeg">
-        </div>
-        <div class="img-container">
-          <img src="img/thenun.jpg">
-        </div>
-        <div class="img-container">
-          <img src="img/interstellar.jpg">
-        </div>
-      </div>
+    <div id="graybox">
+      <div class="bg-blur"></div>
+      <video id="background-video" autoplay muted loop>
+        <source src="videos/_Spheres Trailer Dolby.mp4" type="video/mp4">
+      </video>
     </div>
-    <!--SHOWCASE-->
-    <div class="box">
-      <div class="box-text">
-        <h1>DISCOVER UPCOMMING CINEMA FILMS</h1>
-        <p>
-          Welcome to KCC Cinema, where a world of entertainment awaits you.
-          Discover the wonder of upcoming cinema films that span across genres
-          such as Romance, Drama, Action, Horror, and more. Immerse yourself in
-          heartfelt love stories, gripping narratives, adrenaline-pumping action
-          sequences, spine-chilling horrors, and a wide variety of other
-          exciting films. With our state-of-the-art theaters and immersive sound
-          systems, let KCC Cinema transport you to different worlds, evoke
-          emotions, and create unforgettable memories. Expand your cinematic
-          horizons and embark on an extraordinary journey of entertainment. Step
-          into KCC Cinema and let the magic of the big screen captivate you.
-        </p>
-        <a href="#"><button id="Aboutus">
-          LEARN MORE ABOUT US
-        </button></a>
-      </div>
-    </div>
-    <!--TRENDING MOVIE -->
     <div class="box2">
-      <div class="innerbox">
-        <video controls="controls">
-          <source src="videos/THE NUN II _ OFFICIAL TRAILER.mp4"
-            type="video/mp4" />
+      <div class="borderbox"></div>
+      <div class="centerbox">
+        <video id="showcase-video" autoplay unmuted loop>
+          <source src="videos/_Spheres Trailer Dolby.mp4" type="video/mp4">
         </video>
-        <div class="innerbox-text">
-          <h1>NOW SHOWING</h1>
-          <h2>The Nun II</h2>
-          <p>In 1956 France, Sister Irene is called upon by the Vatican to
-            investigate the murder of a priest at a boarding school. She soon
-            discovers that the school is haunted by a malevolent force in the
-            form of a demonic nun, Valak.<br>
+        <img id="kcc-logo-showcase" src="img/kcc-logo.png" alt="kcc-logo">
+      </div>
+      <h1>NOW SHOWING</h1>
 
-            <br>Irene teams up with a young nun named Debra and a former farmer
-            named Maurice, who is possessed by Valak, to confront the demon and
-            save the school. Along the way, they uncover a dark secret about the
-            boarding school and Valak's true motive.<br>
-
-            <br>In the end, Irene and Debra are able to defeat Valak and banish
-            her
-            back to hell. Maurice is also freed from her possession, and the
-            school is saved.</p>
-          <button id="ticket">
-            <i class="fa fa-ticket" aria-hidden="true"></i>Book Now
-          </button>
+      <!-- NOW SHOWING -->
+      <div class="container1">
+        <div class="box box-1" data-text="Talk To Me"
+          data-info="A romantic drama film released in 2007. Directed by Kasi Lemmons. Starring Don Cheadle and Chiwetel Ejiofor.">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=aLAKJu9aJys' target='_blank'><img
+              src="./img/talktome.jpg" alt="Talk To Me"></a>
+        </div>
+        <div class="box box-2" data-text="Hunger Games">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
+              src="./img/hungergames.jpg" alt="Hunger Games"></a>
+        </div>
+        <div class="box box-3" data-text="Aquaman">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
+              src="./img/aquaman.jpg" alt="Aquaman"></a>
+        </div>
+        <div class="box box-4" data-text="The Nun">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
+              src="./img/the-nun-2-sister-irene-hd-wallpaper-uhdpaper.com-849@1@l.jpg"
+              alt="The Nun"></a>
+        </div>
+        <div class="box box-5" data-text="Equalizer">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
+              src="./img/equalizer.jpg" alt="Equalizer"></a>
+        </div>
+        <div class="box box-6" data-text="No Hard Feelings">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
+              src="./img/nohardfeelings.jpg" alt="No hard feelings"></a>
+        </div>
+        <div class="box box-7" data-text="Oppenheimer">
+          <a class="movie-link"
+            href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
+              src="./img/oppenheimer.jpg" alt="oppenheimer"></a>
         </div>
       </div>
-      <div class="trending-movies">
-        <div>
-          <h1>Now Showing</h1>
-        </div>
-        <div>
-          <div class="card">
-            <div>
-              <img src="img/Mariobros.jpg" alt="Mariobros">
-              <h1>THE SUPER MARIO BROS</h1>
-              <div class="stars2">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <div>
-              <img src="img/Extraction2.png" alt="Extraction2">
-              <h1>EXTRACTION 2</h1>
-              <div class="stars2">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <div>
-              <img src="img/Kraven.jpg" alt="Kraven">
-              <h1>KRAVEN: THE HUNTER</h1>
-              <div class="stars2">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              </div>
-            </div>
-            <div>
-              <img src="img/Godzllxkong.png" alt="Godzllxkong">
-              <h1>GODZILLA X KONG</h1>
-              <div class="stars2">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star-half-o" aria-hidden="true"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- END OF NOW SHOWING -->
+
     </div>
   </body>
 </html>
