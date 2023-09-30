@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/2a956e9c05.js"
       crossorigin="anonymous"></script>
 
@@ -13,6 +14,7 @@
   </head>
 
   <body>
+    
     <!--NAVIGATION-->
     <nav class="navigation">
       <div class="navigation-logo">
@@ -35,52 +37,59 @@
       </div>
     </nav>
     <!--SLIDE SHOW-->
-    <div id="graybox">
+    <!-- <div id="graybox">
       <div class="bg-blur"></div>
       <video id="background-video" autoplay muted loop>
         <source src="videos/_Spheres Trailer Dolby.mp4" type="video/mp4">
       </video>
+    </div> -->
+    <div class="centerbox">
+      <video id="showcase-video" autoplay muted loop>
+        <source src="videos/_Spheres Trailer Dolby.mp4" type="video/mp4">
+      </video>
+      <img id="kcc-logo-showcase" src="img/kcc-logo.png" alt="kcc-logo">
     </div>
+    <div class="borderbox"></div>
+    
     <div class="box2">
-      <div class="borderbox"></div>
+      <img id="cinema-seat" src="img/Untitled design.svg" alt="">
+      <!-- <div class="borderbox"></div>
       <div class="centerbox">
-        <video id="showcase-video" autoplay unmuted loop>
+        <video id="showcase-video" autoplay muted loop>
           <source src="videos/_Spheres Trailer Dolby.mp4" type="video/mp4">
         </video>
         <img id="kcc-logo-showcase" src="img/kcc-logo.png" alt="kcc-logo">
-      </div>
-      <h1>NOW SHOWING</h1>
-
+      </div> -->
+      <h1 data-aos="fade-right">NOW SHOWING</h1>
       <!-- NOW SHOWING -->
-      <div class="container1">
-        <div class="box box-1" data-text="Talk To Me"
-          data-info="A romantic drama film released in 2007. Directed by Kasi Lemmons. Starring Don Cheadle and Chiwetel Ejiofor.">
+      <div class="container1" data-aos-easing="ease-in-out" >
+        <div class="box box-1" data-text="Talk To Me" >
           <a class="movie-link"
             href='https://www.youtube.com/watch?v=aLAKJu9aJys' target='_blank'><img
               src="./img/talktome.jpg" alt="Talk To Me"></a>
         </div>
-        <div class="box box-2" data-text="Hunger Games">
+        <div class="box box-2" data-text="Hunger Games" >
           <a class="movie-link"
             href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
               src="./img/hungergames.jpg" alt="Hunger Games"></a>
         </div>
-        <div class="box box-3" data-text="Aquaman">
+        <div class="box box-3" data-text="Aquaman" >
           <a class="movie-link"
             href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
               src="./img/aquaman.jpg" alt="Aquaman"></a>
         </div>
-        <div class="box box-4" data-text="The Nun">
+        <div class="box box-4" data-text="The Nun" >
           <a class="movie-link"
             href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
               src="./img/the-nun-2-sister-irene-hd-wallpaper-uhdpaper.com-849@1@l.jpg"
               alt="The Nun"></a>
         </div>
-        <div class="box box-5" data-text="Equalizer">
+        <div class="box box-5" data-text="Equalizer" >
           <a class="movie-link"
             href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
               src="./img/equalizer.jpg" alt="Equalizer"></a>
         </div>
-        <div class="box box-6" data-text="No Hard Feelings">
+        <div class="box box-6" data-text="No Hard Feelings" >
           <a class="movie-link"
             href='https://www.youtube.com/watch?v=RDE6Uz73A7g' target='_blank'><img
               src="./img/nohardfeelings.jpg" alt="No hard feelings"></a>
@@ -92,7 +101,22 @@
         </div>
       </div>
       <!-- END OF NOW SHOWING -->
-
     </div>
+    
+    <div class="box3">
+      <div class="container2">
+        <div class="food-section">
+  
+        </div>
+        <div class="coming-soon-container">
+  
+        </div>
+      </div>
+    </div>
+    <!-- COMING SOON -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
