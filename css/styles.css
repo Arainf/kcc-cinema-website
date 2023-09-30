@@ -313,7 +313,7 @@ a {
   height: 600px;
   margin: 0;
   padding: 0;
-  background-image: url(/img/Backgroundgradient.svg);
+  background-image: url(./img/Backgroundgradient.svg);
   top: 55%;
 }
 
