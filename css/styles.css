@@ -398,16 +398,20 @@ video {
 .container1 {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1.5em;
   width: 95%;
   height: 450px;
-  font-family: Arial, Helvetica, sans-serif;
   transition: all 400ms;
   top: 15%;
   padding: 0;
+  overflow: hidden;
   margin: 2.5% 2.5%;
   z-index: 2;
+}
+
+.inside_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
 }
 
 .box {
