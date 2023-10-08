@@ -4,6 +4,7 @@ const rnInner = document.querySelector('.rnInner');
 const rnOuter2 = document.querySelector('.rnOuter2');
 const rnInner2 = document.querySelector('.rnInner2');
 const video = document.querySelector('#showcase-video');
+video.muted = false;
 
 // Add an event listener for scroll events
 window.addEventListener('scroll', () => {
