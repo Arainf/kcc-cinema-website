@@ -35,7 +35,7 @@
 
 body {
   position: relative;
-  height: 2000px;
+  height: 1885px;
   overflow-x: hidden;
   font-family: "myfont";
   color: #333;
@@ -226,12 +226,15 @@ body {
 .rnInner {
   width: 100%;
   position: absolute;
-  top:-10%; right: 0; bottom: 0; left: 0;
+  top: -10%;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto;
   transform-style: preserve-3d;
   transition: transform 6s ease-out;
   transform-origin: -120% top;
-  
+
 }
 
 .rnUnit {
@@ -250,37 +253,46 @@ body {
 
 @keyframes rnUnit {
   50% {
-      transform: rotate(-1deg) ;
+    transform: rotate(-1deg);
   }
 }
 
 .rnUnit:nth-child(1) {
   animation-delay: -0.1s;
 }
+
 .rnUnit:nth-child(2) {
   animation-delay: -0.2s;
 }
+
 .rnUnit:nth-child(3) {
   animation-delay: -0.3s;
 }
+
 .rnUnit:nth-child(4) {
   animation-delay: -0.4s;
 }
+
 .rnUnit:nth-child(5) {
   animation-delay: -0.5s;
 }
+
 .rnUnit:nth-child(6) {
   animation-delay: -0.6s;
 }
+
 .rnUnit:nth-child(7) {
   animation-delay: -.7s;
 }
+
 .rnUnit:nth-child(8) {
   animation-delay: -.8s;
 }
+
 .rnUnit:nth-child(9) {
   animation-delay: -.9s;
 }
+
 .rnUnit:nth-child(10) {
   animation-delay: -1s;
 }
@@ -288,7 +300,8 @@ body {
 .rnOuter2 {
   position: absolute;
   width: 100%;
-  right: -50%; /* Change left to right */
+  right: -50%;
+  /* Change left to right */
   top: -1px;
   height: 100vh;
 }
@@ -296,28 +309,33 @@ body {
 .rnInner2 {
   width: 100%;
   position: absolute;
-  top: -10%; /* Change from top to bottom */
-  left: 0; /* Change right to left */
-  bottom: 0; /* Change top to bottom */
-  right: 0; /* Change left to right */
+  top: -10%;
+  /* Change from top to bottom */
+  left: 0;
+  /* Change right to left */
+  bottom: 0;
+  /* Change top to bottom */
+  right: 0;
+  /* Change left to right */
   margin: auto;
   transform-style: preserve-3d;
   transition: transform 6s ease-out;
-  transform-origin: 120% bottom; /* Opposite direction */
+  transform-origin: 120% bottom;
+  /* Opposite direction */
 }
 
 .rnUnit2 {
   width: 10vw;
   height: 180%;
-  background: repeating-linear-gradient(
-    to left, /* Change to right */
-    hsl(0, 80%, 50%) 4vw,
-    hsl(0, 80%, 30%) 8vw,
-    hsl(0, 80%, 70%) 10vw
-  );
+  background: repeating-linear-gradient(to left,
+      /* Change to right */
+      hsl(0, 80%, 50%) 4vw,
+      hsl(0, 80%, 30%) 8vw,
+      hsl(0, 80%, 70%) 10vw);
   background-size: 100% 100%;
   display: inline-block;
-  transform-origin: 0 0; /* Opposite direction */
+  transform-origin: 0 0;
+  /* Opposite direction */
   transform: rotate(0deg);
   padding: 0 0px;
   margin: 0 -8px;
@@ -327,62 +345,82 @@ body {
 
 @keyframes rnUnit2 {
   50% {
-    transform: rotate(1deg); /* Opposite rotation */
+    transform: rotate(1deg);
+    /* Opposite rotation */
   }
 }
 
 .rnUnit2:nth-child(1) {
-  animation-delay: 0.1s; /* Change negative delay to positive */
+  animation-delay: 0.1s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(2) {
-  animation-delay: 0.2s; /* Change negative delay to positive */
+  animation-delay: 0.2s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(3) {
-  animation-delay: 0.3s; /* Change negative delay to positive */
+  animation-delay: 0.3s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(4) {
-  animation-delay: 0.4s; /* Change negative delay to positive */
+  animation-delay: 0.4s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(5) {
-  animation-delay: 0.5s; /* Change negative delay to positive */
+  animation-delay: 0.5s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(6) {
-  animation-delay: 0.6s; /* Change negative delay to positive */
+  animation-delay: 0.6s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(7) {
-  animation-delay: 0.7s; /* Change negative delay to positive */
+  animation-delay: 0.7s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(8) {
-  animation-delay: 0.8s; /* Change negative delay to positive */
+  animation-delay: 0.8s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(9) {
-  animation-delay: 0.9s; /* Change negative delay to positive */
+  animation-delay: 0.9s;
+  /* Change negative delay to positive */
 }
+
 .rnUnit2:nth-child(10) {
-  animation-delay: 1s; /* Change negative delay to positive */
+  animation-delay: 1s;
+  /* Change negative delay to positive */
 }
 
 .rnOuter .rnInner {
   transform-origin: 0 top;
   transform: scaleX(1);
-  animation: openAnimation1 3s ease-in-out  forwards; 
+  animation: openAnimation1 3s ease-in-out forwards;
 }
 
 .rnOuter2 .rnInner2 {
   transform-origin: 0 top;
   transform: scaleX(1);
-  animation: openAnimation2 3s ease-in-out  forwards;
+  animation: openAnimation2 3s ease-in-out forwards;
 }
 
 @keyframes openAnimation1 {
   0% {
     transform-origin: -120% top;
-    transform: scaleX(1); 
+    transform: scaleX(1);
   }
 
   50% {
     transform-origin: -120% top;
-    transform: scaleX(.5); 
+    transform: scaleX(.5);
   }
 
   100% {
@@ -394,12 +432,12 @@ body {
 @keyframes closeAnimation1 {
   0% {
     transform-origin: -120% top;
-    transform: scaleX(0); 
+    transform: scaleX(0);
   }
 
   50% {
     transform-origin: -120% top;
-    transform: scaleX(.5); 
+    transform: scaleX(.5);
   }
 
   100% {
@@ -416,7 +454,7 @@ body {
 
   50% {
     transform-origin: 120% top;
-    transform: scaleX(.5); 
+    transform: scaleX(.5);
   }
 
   100% {
@@ -428,12 +466,12 @@ body {
 @keyframes closeAnimation2 {
   0% {
     transform-origin: 120% top;
-    transform: scaleX(0); 
+    transform: scaleX(0);
   }
 
   50% {
     transform-origin: 120% top;
-    transform: scaleX(.5); 
+    transform: scaleX(.5);
   }
 
   100% {
@@ -487,7 +525,8 @@ body {
   -webkit-box-shadow: 1px -3px 50px -13px rgba(255, 255, 255, 1);
   -moz-box-shadow: 1px -3px 50px -13px rgba(255, 255, 255, 1);
   box-shadow: 0px 6px 45px -8px rgba(255, 255, 255, 1);
-  outline: 0px 2px solid rgba(255, 255, 255, 0.5); /* Add a blurry white border */
+  outline: 0px 2px solid rgba(255, 255, 255, 0.5);
+  /* Add a blurry white border */
   border-radius: 5px;
 }
 
@@ -505,14 +544,14 @@ body {
   margin: 0;
 }
 
-.centerbox > img {
+.centerbox>img {
   -webkit-transform: perspective(700px) rotateX(-6deg);
 }
 
 /*----------------------------------------SLIDESHOW-------------------------------------------------*/
 
 
-.box2 > h1 {
+.box2>h1 {
   font-size: 30px;
   margin: 0;
   position: absolute;
@@ -539,7 +578,7 @@ a {
 
 .box2 {
   position: absolute;
-  width: 100%;  
+  width: 100%;
   height: 1000px;
   margin: 0;
   padding: 0;
@@ -547,9 +586,9 @@ a {
   background-image: -webkit-radial-gradient(#890000 4%, #5B0000 9%, rgba(102, 0, 0, 0) 9%), -webkit-radial-gradient(#890000 4%, #5B0000 8%, rgba(102, 0, 0, 0) 10%), -webkit-radial-gradient(rgba(153, 0, 0, 0.8) 20%, rgba(102, 0, 0, 0)), -webkit-radial-gradient(rgba(153, 0, 0, 0.8) 20%, rgba(102, 0, 0, 0)), -webkit-radial-gradient(#660000 35%, rgba(102, 0, 0, 0) 60%), -webkit-radial-gradient(#660000 35%, rgba(102, 0, 0, 0) 60%), -webkit-radial-gradient(rgba(76, 0, 0, 0.7), rgba(102, 0, 0, 0)), -webkit-radial-gradient(rgba(76, 0, 0, 0.7), rgba(102, 0, 0, 0)), -webkit-linear-gradient(45deg, rgba(102, 0, 0, 0) 49%, #000000 50%, rgba(102, 0, 0, 0) 70%), -webkit-linear-gradient(135deg, rgba(102, 0, 0, 0) 49%, #000000 50%, rgba(102, 0, 0, 0) 70%);
   background-position: 0 0px, 50px 50px, 50px 0px, 0 50px, 50px 0px, 100px 50px, 0 0px, 50px 50px, 0 0px, 0 0;
   background-size: 100px 100px;
-  -webkit-box-shadow: inset 13px -57px 300px 76px rgba(18,18,18,1);
-  -moz-box-shadow: inset 13px -57px 300px 76px rgba(18,18,18,1);
-  box-shadow: inset 13px -50px 300px 76px rgba(18,18,18,1);
+  -webkit-box-shadow: inset 13px -57px 300px 76px rgba(18, 18, 18, 1);
+  -moz-box-shadow: inset 13px -57px 300px 76px rgba(18, 18, 18, 1);
+  box-shadow: inset 13px -50px 300px 76px rgba(18, 18, 18, 1);
   border-top: 21px solid #4E0B10;
   top: 55%;
 }
@@ -666,7 +705,9 @@ video {
   flex-direction: row;
 }
 
-.container_box, .container_box1, .container_box2 { 
+.container_box,
+.container_box1,
+.container_box2 {
   scroll-snap-align: start;
   position: relative;
   display: flex;
@@ -678,10 +719,12 @@ video {
   padding: 0 75px;
 }
 
-.container_box > .box, .container_box1 > .box, .container_box2 > .box {
+.container_box>.box,
+.container_box1>.box,
+.container_box2>.box {
   position: relative;
   background-size: cover;
-  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
   display: flex;
   flex: 1;
   flex-basis: 300px;
@@ -691,16 +734,16 @@ video {
   width: 285px;
   margin: 0 24px;
   height: auto;
-  background: rgba( 255, 255, 255, 0.1 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border: 15px solid #000;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.container1_nav{
+.container1_nav {
   display: flex;
   column-gap: 1rem;
   position: absolute;
@@ -711,7 +754,7 @@ video {
   bottom: 22%;
 }
 
-.container1_nav > a {
+.container1_nav>a {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
@@ -720,7 +763,7 @@ video {
   transition: opacity ease 250ms;
 }
 
-.container1_nav > a:hover {
+.container1_nav>a:hover {
   opacity: 1;
 }
 
@@ -778,21 +821,21 @@ video {
 .box img {
   object-fit: cover;
   position: relative;
-  width: calc(100% - 10px); 
-  height: calc(100% - 10px); 
-  padding: 5px; 
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  padding: 5px;
   background-color: #fff;
-  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+  transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .box-description {
   position: absolute;
   display: flex;
-  top:0px;
-  left:0px;
-  width:100%;
-  height:100%;
-  background-color: rgba(255,255,255,.7);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, .7);
   transition: all .7s ease-in-out;
   padding: 20px;
   box-sizing: border-box;
@@ -800,50 +843,50 @@ video {
   flex-direction: column;
 }
 
-.box:hover .box-description{
-  left:0px;
+.box:hover .box-description {
+  left: 0px;
   transition: all .7s ease-in-out;
   clip-path: circle(75%);
 }
 
-.box:hover{
-  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
-  box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+.box:hover {
+  transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, .3);
   transform: scale(.97);
 }
 
-.box:hover img{
-  transition: all .5s cubic-bezier(.8,.5,.2,1.4);
+.box:hover img {
+  transition: all .5s cubic-bezier(.8, .5, .2, 1.4);
   transform: scale(1.6) rotate(20deg);
   filter: blur(3px);
 }
 
-.box-description h1{
+.box-description h1 {
   color: #ff3838;
   letter-spacing: 1px;
   margin: 5px;
   font-size: 22px;
 }
 
-.box-description p{
+.box-description p {
   line-height: 24px;
   height: 70%;
 }
 
-.box-description button{
+.box-description button {
   width: fit-content;
   height: 40px;
   cursor: pointer;
   border-style: none;
   background-color: #ff3838;
-  color:#fff;
+  color: #fff;
   font-size: 15px;
   outline: none;
-  box-shadow: 0px 2px 3px rgba(0,0,0,.4);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, .4);
   transition: all .5s ease-in-out;
 }
 
-.box button:hover{
+.box button:hover {
   transform: scale(.95) translateX(-5px);
   transition: all .5s ease-in-out;
 }
@@ -918,12 +961,12 @@ video {
 .box3 {
   display: flex;
   background: #121212;
-  -webkit-box-shadow: 13px -103px 300px 102px rgba(18,18,18,1);
-  -moz-box-shadow: 13px -103px 300px 102px rgba(18,18,18,1);
-  box-shadow: 13px -103px 300px 102px rgba(18,18,18,1);
+  -webkit-box-shadow: 13px -103px 300px 102px rgba(18, 18, 18, 1);
+  -moz-box-shadow: 13px -103px 300px 102px rgba(18, 18, 18, 1);
+  box-shadow: 13px -103px 300px 102px rgba(18, 18, 18, 1);
   flex-direction: column;
   width: 100%;
-  height: 1000px;
+  height: 830px;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -934,7 +977,7 @@ video {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 100% ;
+  height: 100%;
 }
 
 .food-section {
@@ -958,7 +1001,7 @@ video {
   height: 900px;
   overflow: hidden;
   margin: 50px 0px;
-  padding: 0; 
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow: scroll;
 }
@@ -1000,27 +1043,27 @@ video {
   color: #ffffff;
 }
 
-.card-text > div >h1 {
+.card-text>div>h1 {
   padding: 0;
   margin: 20px 0 5px 20px;
 }
 
-.card-text > div > p {
+.card-text>div>p {
   padding: 0;
   margin: 20px 0 5px 20px;
 }
 
-.card-text > div > p > a {
+.card-text>div>p>a {
   padding: 0;
   margin: 20px 0 5px 0px;
   transition: all 500ms ease-in-out;
 }
 
-.card-text > div > p > a:hover {
+.card-text>div>p>a:hover {
   color: aqua;
 }
 
-.card-text > div > button {
+.card-text>div>button {
   position: absolute;
   right: 2%;
   bottom: 7%;
@@ -1042,21 +1085,21 @@ video {
   transition: all 500ms ease-in-out;
 }
 
-.card-text > div > button:hover {
+.card-text>div>button:hover {
   border-color: aqua;
   color: aqua;
 }
 
 .box4 {
-  background: rgba( 18, 18, 18, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(18, 18, 18, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   color: #fff;
-  height: 330px;
+  height: 340spx;
   font-family: "myfont2";
   position: absolute;
-  bottom: -66%;
+  bottom: -62%;
   width: 100%;
 }
 
@@ -1089,7 +1132,7 @@ video {
   font-family: "supreme-light";
 }
 
-.col1 > p {
+.col1>p {
   font-size: 12px;
 }
 
@@ -1107,7 +1150,7 @@ video {
   font-family: "supreme-light";
 }
 
-.col2 > p{
+.col2>p {
   font-size: 12px;
 }
 
@@ -1126,7 +1169,7 @@ video {
   font-family: "supreme-light";
 }
 
-.col3 > p {
+.col3>p {
   font-size: 12px;
 }
 
@@ -1137,6 +1180,7 @@ video {
   display: inline-block;
   border-radius: 2px;
 }
+
 /*-------FOOTER - EMAIL FORM-------*/
 form {
   padding-bottom: 15px;
@@ -1221,7 +1265,7 @@ hr {
   height: auto;
   width: 400px;
   position: absolute;
-  bottom: -62%;
+  bottom: -58%;
   left: 35%;
   z-index: -1;
 }
@@ -1229,4 +1273,61 @@ hr {
 #decor-lineRemove {
   text-decoration: none;
   color: inherit;
+}
+
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 24px;
+  padding: 0 16px;
+  counter-reset: item;
+  padding-top: 20vh;
+  padding-top: calc(var(--vh, 1vh) * 20);
+}
+
+.bg {
+  background-color: #121212;
+  position: relative;
+  height: 200px;
+  width: auto;
+  cursor: pointer;
+}
+
+.bg>img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(70%);
+}
+
+.big {
+  display: block;
+  height: auto;
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+}
+
+.bg>h2 {
+  display: block;
+  font-family: supreme-light;
+  font-size: .78125vw;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  background-color: #121212;
+}
+
+.big>h2 {
+  display: block;
+  font-family: supreme-light;
+  font-size: .78125vw;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  background-color: #121212;
 }
