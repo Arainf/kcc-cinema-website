@@ -34,7 +34,6 @@ body {
     backdrop-filter: blur(8px) brightness(1.2);
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     color: white;
-    -webkit-mask-image: linear-gradient(black 70%, transparent);
 }
 
 .navigation-logo {
@@ -220,10 +219,18 @@ body {
     
 }
 
+
+svg {
+    top: 850px;
+    position: absolute;
+    
+}
+
 .developer-container {
     top: 50px;
+    padding-bottom: 2px;
     padding-left: 50px;
-    padding-right: 90px;
+    padding-right: 50px;
     background-color: #eae6e6;
     position: relative;
     color: black;
@@ -235,13 +242,6 @@ body {
     text-align: center;
 }
 
-svg {
-    top: 850px;
-    position: absolute;
-    
-}
-
-/*-------MEET THE DEVELOPERS-------*/
 .container {
     background-color: #eae6e6;
     display: flex;
@@ -250,141 +250,271 @@ svg {
     padding-bottom: 30px;
 }
 
-.image {
-    width: 100px;
-    height: 500px;
-    margin: 30px;
-    border-radius: 50px;
-    background-size: cover;
-    background-position: center;
+.student-1,
+.student-2,
+.student-3 {
+    margin-right: 150px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    overflow: hidden;
-    transition: 0.5s;
+    padding-bottom: 50px;
+
 
 }
 
-.image:hover {
-    width: 300px;
-    cursor: pointer;
-
-}
-
-.image:nth-child(1) {
-    background-image: url("Images/Developers-pic/rainier.jpg");
-}
-
-.image:nth-child(2) {
-    background-image: url("Images/Developers-pic/brianUnoffcial.jpg");
-}
-
-.image:nth-child(3) {
-    background-image: url("Images/Developers-pic/prince.jpg");
-}
-
-
-/* .image::before  */
-.image:hover::before {
-    content: "";
+.shape_bg1 img,
+.shape_bg2 img,
+.shape_bg3 img {
+    width: 100%;
+    /* Make the image width 100% of the parent shape */
+    height: 100%;
+    /* Make the image height 100% of the parent shape */
+    object-fit: cover;
+    /* Ensure the image covers the entire shape */
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    /* background: linear-gradient(0deg, black 50%, transparent 50%); */
-    background: linear-gradient(0deg, black 0%, black 10%, transparent);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-
-
+    z-index: 1;
+    /* Place the image above the shape */
 }
 
-.image .developer-information {
-    color: aliceblue;
-    position: absolute;
-    align-items: end;
-    width: 300px;
-    height: 38%;
-    padding: 0 35px;
-    transform: translateX(100%);
-    opacity: 0;
-    transition: 0.5s;
-
+.shape_bg1 {
+    background: #c70039;
+    background: -webkit-linear-gradient(188deg, #c70039 0%, #500303 50%, #2e0013 100%);
+    background: linear-gradient(188deg, #c70039 0%, #500303 50%, #2e0013 100%);
+    border-radius: 31% 69% 24% 76% / 4% 45% 55% 96%;
+    filter: drop-shadow(7px 17px 13px #600101);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
 }
 
-.image:hover .developer-information {
-    transform: translateX(0);
-    /* transition-delay: 0.1s; */
-    opacity: 1;
+.shape_bg2 {
+    background: #c70039;
+    background: -webkit-linear-gradient(188deg, #c70039 0%, #500303 50%, #2e0013 100%);
+    background: linear-gradient(188deg, #c70039 0%, #500303 50%, #2e0013 100%);
+    border-radius: 74% 26% 52% 48% / 31% 51% 49% 69%;
+    filter: drop-shadow(-8px 18px 13px #600101);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
 }
 
-
-.developer-information .name {
-    font-size: 30px;
-    line-height: 25px;
-    color: rgb(230, 249, 108);
-    margin: 10px 0;
-
+.shape_bg3 {
+    background: #c70039;
+    background: -webkit-linear-gradient(188deg, #c70039 0%, #500303 50%, #2e0013 100%);
+    background: linear-gradient(188deg, #c70039 0%, #500303 50%, #2e0013 100%);
+    border-radius: 72% 28% 56% 44% / 47% 37% 63% 53%;
+    filter: drop-shadow(-8px 18px 13px #600101);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
 }
 
+/*-------DEVELOPER - INFORMATION -------*/
 .developer-information {
-    margin-left: 50px;
-}
-
-.developer-information .mo {
-    color: rgb(195, 163, 217);
-    margin-bottom: 4px;
-}
-
-.developer-information .movies {
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
 }
 
-/*-------DEVELOPER - FACEBOOK LINK -------*/
-.developer-information .social-icon .fab {
+/*-------STUDENT INFO-1 -------*/
+.studentInfo-1 {
+    top: -20px;
+    margin-left: 100px;
+    margin-right: 75px;
+    position: relative;
+    text-align: center;
+}
+
+.studentInfo-2 {
+    top: -20px;
+    margin-left: 60px;
+    margin-right: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.studentInfo-3 {
+    top: -20px;
+    margin-left: 50px;
+    margin-right: 75px;
+    position: relative;
+    text-align: center;
+}
+
+.studentInfo-1 h3 {
+    font-family: "myfont";
+}
+
+.studentInfo-1 h4 {
+    top: -20px;
+    position: relative;
+    font-family: "supreme-light";
+    color: #b50909;
+}
+
+.studentInfo-1 .contact-icon {
+    top: -20px;
+    position: relative;
+}
+
+.studentInfo-1 .contact-icon a:hover .fab {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-10px);
+}
+
+.studentInfo-1 .contact-icon .fab {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
     margin-right: 15px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-.developer-information .social-icon a:hover .fab {
-    background-color: #101013;
-    color: #ccc;
-    transform: translateY(-10px);
-}
-
-/*-------DEVELOPER - GMAIL LINK -------*/
-.developer-information .social-icon .fas {
+.studentInfo-1 .contact-icon .fas {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
-    background: #fff;
+    color: #fff;
+    background: #000;
     margin-right: 15px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
-.developer-information .social-icon a:hover .fas {
-    background-color: #101013;
-    color: #ccc;
+.studentInfo-1 .contact-icon a:hover .fas {
+    background-color: #fff;
+    color: #000;
     transform: translateY(-10px);
 }
+
+/*-------STUDENT INFO-2 -------*/
+.studentInfo-2 h3 {
+    font-family: "myfont";
+}
+
+.studentInfo-2 h4 {
+    top: -20px;
+    position: relative;
+    font-family: "supreme-light";
+    color: #b50909;
+}
+
+.studentInfo-2 .contact-icon {
+    top: -20px;
+    position: relative;
+}
+
+.studentInfo-2 .contact-icon a:hover .fab {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-10px);
+}
+
+.studentInfo-2 .contact-icon .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.studentInfo-2 .contact-icon .fas {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.studentInfo-2 .contact-icon a:hover .fas {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-10px);
+}
+
+/*-------STUDENT INFO-3 -------*/
+.studentInfo-3 h3 {
+    font-family: "myfont";
+}
+
+.studentInfo-3 h4 {
+    top: -20px;
+    position: relative;
+    font-family: "supreme-light";
+    color: #b50909;
+}
+
+.studentInfo-3 .contact-icon {
+    top: -20px;
+    position: relative;
+}
+
+.studentInfo-3 .contact-icon a:hover .fab {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-10px);
+}
+
+.studentInfo-3 .contact-icon .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.studentInfo-3 .contact-icon .fas {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.studentInfo-3 .contact-icon a:hover .fas {
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-10px);
+}
+
 
 /*-------KCC SLOGAN-------*/
 .kcc-slogan {
@@ -407,7 +537,7 @@ svg {
 }
 
 #scalable-graphics {
-    top: 50px;
+    top: 100px;
     position: relative;
 }
 
@@ -415,10 +545,6 @@ svg {
     top: -50px;
     position: relative;
 }
-
-
-
-
 
 /*-------FOOTER-------*/
 footer{
@@ -461,13 +587,6 @@ footer{
     border-radius: 2px;
 }
 
-/*.icon-align {
-    flex-basis: 25%;
-    padding: 10px;
-    text-align: justify;
-
-}*/
-
 .col2 {
     flex-basis: 25%;
     padding: 10px;
@@ -480,14 +599,6 @@ footer{
     display: inline-block;
     border-radius: 2px;
 }
-
-
-/*.col2 .fas {
-    font-size: 15px;
-    margin-right: 10px;
-    vertical-align: middle;
-    display: inline-block;
-}*/
 
 .col3 {
     flex-basis: 25%;
@@ -556,10 +667,6 @@ form button .fas {
     color: #ccc;
     transform: translateY(-10px);
 }
-
-/*.social-icon a:active .fab {
-    font-size: 100px;
-}*/
 
 hr {
     margin-right: 82px ;
